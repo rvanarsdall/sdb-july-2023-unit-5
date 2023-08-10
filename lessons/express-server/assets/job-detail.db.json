@@ -1,0 +1,26 @@
+[
+  {
+    "id": "818ed85d-8c6c-4776-ab23-44ebf6975b43",
+    "dateApplied": "8-8-2023",
+    "companyName": "Google Inc",
+    "jobTitle": "Senior Dev",
+    "contact": "Brad Miller",
+    "status": "active"
+  },
+  {
+    "id": "818ed85d-8c6c-4776-ab23-44ebf6975b454",
+    "dateApplied": "8-5-2023",
+    "companyName": "TESLA",
+    "jobTitle": "Senior Dev",
+    "contact": "Elon Musk",
+    "status": "applied"
+  },
+  {
+    "id": "c988985d-3f52-44a2-bfb2-121ab4d2cf34",
+    "dateApplied": "2023-08-09",
+    "companyName": "Mc Donalds",
+    "jobTitle": "Head Cook",
+    "contact": "Ronald",
+    "status": "applied"
+  }
+]

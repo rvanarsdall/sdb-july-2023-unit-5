@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Interview Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>Job Status Tracker</header>
+    <!-- Table Section -->
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Date Applied</th>
+          <th>Company Name</th>
+          <th>Job Title</th>
+          <th>Contact</th>
+          <th>Status</th>
+          <th>Edit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>2/22/2023</td>
+          <td>Space X</td>
+          <td>Senior Developer</td>
+          <td>Elon Musk</td>
+          <td>Applied</td>
+          <td><button>Edit</button></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>2/22/2023</td>
+          <td>Twitter (X)</td>
+          <td>Senior Developer</td>
+          <td>Elon Musk</td>
+          <td>Applied</td>
+          <td><button>Edit</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- Table Section End -->
+
+    <div class="main-container">
+      <!-- Form for Job Application -->
+      <div class="form-container">
+        <h2>Job Application Form</h2>
+        <form id="job-add-form">
+          <!-- Form Field Date -->
+          <label for="dateApplied">Date Applied:</label>
+          <input type="date" name="dateApplied" id="dateApplied" />
+          <!-- Form Field Company Name -->
+          <label for="companyName">Company Name</label>
+          <input type="text" name="companyName" id="companyName" />
+          <!-- Form Field Job Title -->
+          <label for="jobTitle">Job Title</label>
+          <input type="text" name="jobTitle" id="jobTitle" />
+          <!-- Form Field Contact -->
+          <label for="contact">Contact</label>
+          <input type="text" name="contact" id="contact" />
+          <!-- Form Field Status -->
+          <label for="status">Status</label>
+          <select name="status" id="status">
+            <option value="applied">Applied</option>
+            <option value="interviewed">Interviewed</option>
+            <option value="rejected">Rejected</option>
+            <option value="accepted">Accepted</option>
+          </select>
+          <input type="submit" value="SUBMIT" />
+        </form>
+      </div>
+      <!-- Form for Job Application End -->
+
+      <!-- Deleting Job -->
+      <div class="form-container">
+        <h2>Remove A Job Form</h2>
+        <form id="remove">
+          <!-- Form Field -->
+          <label for="remove-job">Remove Job</label>
+          <select name="remove-job" id="remove-job">
+            <option value="0">Job 1</option>
+            <option value="1">Job 2</option>
+          </select>
+          <input type="submit" value="REMOVE JOB" />
+        </form>
+      </div>
+      <!-- Deleting Job End -->
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
