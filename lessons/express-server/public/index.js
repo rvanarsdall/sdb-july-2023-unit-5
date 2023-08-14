@@ -68,13 +68,19 @@ function displayJobs(jobs) {
             <td>${jobs[i].jobTitle}</td>
             <td>${jobs[i].contact}</td>
             <td>${jobs[i].status}</td>
-            <td><button>Edit</button></td>
+            <td><button onclick="goToEditURL('${
+              jobs[i].id
+            }')">Edit</button></td>
             </tr>`;
 
     tableRows = tableRows + newRows;
   }
   // Display the Table Row of Information about the Job (JobDetail)
   tableBody.innerHTML = tableRows;
+}
+
+function goToEditURL(id) {
+  window.location.href = "/edit.html?id=" + id;
 }
 
 getAllJobs();

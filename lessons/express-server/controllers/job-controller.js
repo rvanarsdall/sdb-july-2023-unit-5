@@ -27,6 +27,23 @@ router.get("/all", (req, res) => {
   res.json({ message: "success", jobs: jobArray });
 });
 
+// Endpoint: localhost:4000/job/get-by-id/:id
+// :id = "params" | req.params
+// Request Type: GET
+// Response: JSON: message: "success", job: job
+router.get("/get-by-id/:id", (req, res) => {
+  try {
+    const { id } = req.params;
+    let jobArray = read();
+    let job = jobArray.find((job) => job.id === id);
+
+    if (!job) throw new Error("Job not found");
+
+    res.json({ message: "success", job: job });
+  } catch (error) {
+    res.json({ message: "error", error: error.message });
+  }
+});
 // Create Endpoint: localhost:4000/job/add
 // Request Type: POST
 // Data: dateApplied, companyName, jobTitle, contact, status

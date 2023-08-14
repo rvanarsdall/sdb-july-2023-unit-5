@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Interview Edit</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">Edit Job Status Tracker</header>
+
+    <div class="column">
+      <!--  Add Edit Form -->
+      <div class="form-container">
+        <h2>Edit Job Application Form</h2>
+        <form>
+          <!-- Form Field -->
+          <label for="dateApplied">Date Applied:</label>
+          <input
+            type="date"
+            id="dateApplied"
+            name="dateApplied"
+            required
+          /><br /><br />
+
+          <label for="companyName">Company Name:</label>
+          <input
+            type="text"
+            id="companyName"
+            name="companyName"
+            required
+          /><br /><br />
+
+          <label for="jobTitle">Job Title:</label>
+          <input
+            type="text"
+            id="jobTitle"
+            name="jobTitle"
+            required
+          /><br /><br />
+
+          <label for="contact">Contact:</label>
+          <input type="text" id="contact" name="contact" required /><br /><br />
+
+          <label for="status">Status:</label>
+          <select id="status" name="status" required>
+            <option value="applied">Applied</option>
+            <option value="interviewed">Interviewed</option>
+            <option value="rejected">Rejected</option>
+            <option value="accepted">Accepted</option></select
+          ><br /><br />
+
+          <input type="submit" value="UPDATE JOB" />
+        </form>
+      </div>
+    </div>
+
+    <script src="./edit.js"></script>
+  </body>
+</html>

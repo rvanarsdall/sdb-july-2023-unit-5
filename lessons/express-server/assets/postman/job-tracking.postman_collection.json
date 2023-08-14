@@ -1,0 +1,275 @@
+{
+	"info": {
+		"_postman_id": "ffe0ca37-cd22-42fe-987c-a47ae4aada70",
+		"name": "Express Lesson",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7727936"
+	},
+	"item": [
+		{
+			"name": "Jobs",
+			"item": [
+				{
+					"name": "Get All Jobs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/job/all",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"job",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Job By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/job/get-by-id/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"job",
+								"get-by-id",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "818ed85d-8c6c-4776-ab23-44ebf6975b43"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Job by ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/job/delete/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"job",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "818ed85d-8c6c-4776-ab23-44ebf6975b45"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Job",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"dateApplied\" : \"8-5-2023\",\n    \"companyName\" : \"SpaceX\",\n    \"jobTitle\" : \"Senior Dev\",\n    \"contact\" : \"Elon Musk\",\n    \"status\" : \"applied\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/job/add",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"job",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Job by ID",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"dateApplied\" : \"8-5-2023\",\n    \"companyName\" : \"SpaceX\",\n    \"jobTitle\" : \"Senior Dev\",\n    \"contact\" : \"Elon Musk\",\n    \"status\" : \"applied\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/job/update/?id=818ed85d-8c6c-4776-ab23-44ebf6975b454",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"job",
+								"update",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "818ed85d-8c6c-4776-ab23-44ebf6975b454"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Practice",
+			"item": [
+				{
+					"name": "localhost:4000/test",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/test",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"test"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:4000/practice/",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/practice/",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"practice",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:4000/practice/greeting",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\": \"Rob\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/practice/greeting",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"practice",
+								"greeting"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:4000/practice/add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"num1\": 5,\n    \"num2\": 10\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/practice/add",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"practice",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:4000/practice/weather",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"num1\": 5,\n    \"num2\": 10\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/practice/weather",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"practice",
+								"weather"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
